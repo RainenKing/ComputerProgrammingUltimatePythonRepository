@@ -1,9 +1,3 @@
-- all_true
-- any_true
-- has_negative
-- has_vowel
-- all_vowels
-
 https://codingbat.com/python/List-2
 sum13
 big_diff
