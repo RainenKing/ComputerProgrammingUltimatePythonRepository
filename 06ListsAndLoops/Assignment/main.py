@@ -52,3 +52,71 @@ print("average_act_score")
 inputlist=[3, 12, 54, 32, 27, 38, 24]
 returnvalue = average_act_score(inputlist)
 print(returnvalue)
+
+
+
+
+
+
+
+
+
+
+def all_true(booleans):
+    
+    for booleans in booleans:
+        if booleans not in [True]:
+           return False
+    return True
+        
+
+print("all_true")
+print(all_true([True, True, True, True, True]))
+print(all_true([True, False, True, True, True]))
+
+
+
+def any_true(booleans):
+    
+    for booleans in booleans:
+        if booleans == True:
+           return True
+    return False
+        
+
+print("any_true")
+print(any_true([False, True, False, True, True]))
+print(any_true([False, False, False, False, False]))
+
+
+
+def has_vowel(letters):
+    
+    for letters in letters:
+        if letters in ["a", "e", "i", "o", "u"]:
+           return True
+    return False
+        
+
+print("has_vowel")
+print(has_vowel(["d", "n", "r", "f", "c"]))
+print(has_vowel(["f", "s", "r", "n", "a"]))
+
+
+
+def mostly_true(Booleans):
+    count = 0
+    countF = 0
+    for Boolean in Booleans:
+        if Boolean == True:
+            count += 1
+        if Boolean == False:
+            countF += 1
+
+    if count > countF:
+            return True
+    return False
+
+print("mostly_True")
+print(mostly_true([True, True, False]))
+print(mostly_true([False, False, True]))
