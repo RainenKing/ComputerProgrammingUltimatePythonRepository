@@ -6,6 +6,7 @@ import os
 
 def test_function_definition(test_case, module, function_name, expected_num_args):
     # check the function is defined
+    
     function_defined = hasattr(module, function_name)
     test_case.assertTrue(function_defined, f"{function_name} is not defined in {module.__name__}")
 
