@@ -31,4 +31,76 @@ def count_target_letters(words, letters):
     return total
 
 
+
+def in_alphabetical_order(letters):
+    previous = letters[0]
+    for letter in letters:
+        if letter < previous:
+            return False
+        previous = letter
+    return True
+
+
+
+
+
+
+
+
+
+
+def alternate_case(word):
+    result = ""
+    next_upper = True
+    for letter in word:
+        if next_upper == True:
+            result == result + letter.upper()
+            next_upper = False
+        elif next_upper == False:
+            result = result + letter
+            next_upper = True
+    return result
+
+
+
+def remove_vowels(letters):
+    result = ""
+    for letter in letters:
+        if letter in "aeiou":
+            pass
+        else:
+            result = result + letter
+    return result
+
+
+
+def to_camel_case(word):
+    result = ""
+    next_upper = True
+    for letter in word:
+        if next_upper == True:
+             result = result + letter.upper()
+             next_upper = False
+        elif letter == " ":
+            pass
+            next_upper = True
+        
+print(to_camel_case("hello world"))
+
+def to_snake_case(word):
+    result = ""
+    next_upper = True
+    for letter in word:
+        if next_upper == True:
+             result = result + letter
+             next_upper = False
+        elif letter == " ":
+            pass
+            next_upper = True
+
+
+
+
+
+
     
