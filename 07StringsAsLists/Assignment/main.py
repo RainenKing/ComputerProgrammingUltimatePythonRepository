@@ -89,18 +89,25 @@ print(to_camel_case("hello world"))
 
 def to_snake_case(word):
     result = ""
-    next_upper = True
     for letter in word:
-        if next_upper == True:
-             result = result + letter
-             next_upper = False
-        elif letter == " ":
+        if letter == " ":
             pass
-            next_upper = True
+            result = result + "_"
+        else:
+            result = result + letter
+    return result
+
+print(to_snake_case("hello world"))
 
 
 
-
-
-
-    
+def without_duplicates(numbers):
+    result = []
+    previous = numbers[0]-1
+    for number in numbers:
+        if number == previous:
+            pass
+            previous = number
+        else:
+            result = result + number
+    return result
