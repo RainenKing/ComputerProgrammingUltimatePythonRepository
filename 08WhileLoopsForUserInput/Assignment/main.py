@@ -34,5 +34,19 @@ import random
 
 number = 50
 print(number)
-amount = int(input("enter coin amount 5, 10, or 25"))
-total = number - amount
+Total = True
+while Total == True:
+    amount_entered = int(input("enter your coins only 5, 10, and 25 cents"))
+    if amount_entered != 10 and amount_entered != 5 and amount_entered != 25:
+        print("invalid amount entered")
+        Total = False
+    elif number > 0:
+        amount_entered == 10 and amount_entered == 5 and amount_entered == 25
+        Total = True
+        sub_amount = number - amount_entered
+        number = sub_amount
+        print(number)
+    else:
+        number == 0
+        Total = False
+        print("total due paid")
